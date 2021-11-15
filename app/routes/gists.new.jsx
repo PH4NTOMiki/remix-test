@@ -39,14 +39,14 @@ export default function NewGist() {
 	return (
 		<>
 			<h2>New Gist!</h2>
-			{transition.state === "submitting" ? (
+			{/*{transition.state === "submitting" ? (
 				<div>
 					<p>
 						<Loading /> Creating gist:{" "}
 						{transition.submission.formData.get("fileName")}
 					</p>
 				</div>
-			) : (
+			) : (*/}
 				<Form method="post">
 					<p>
 						<label>
@@ -66,7 +66,7 @@ export default function NewGist() {
 						<button type="submit">Create Gist</button>
 					</p>
 				</Form>
-			)}
+			{/*)}*/}
 		</>
 	);
 }

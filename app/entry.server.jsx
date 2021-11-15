@@ -1,5 +1,7 @@
 import ReactDOMServer from "react-dom/server";
 import { RemixServer } from "remix";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 export default function handleRequest(
   request,
